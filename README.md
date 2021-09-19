@@ -2,10 +2,12 @@
 A simple rdbm with a paged file manager, record based file manager, a relation manager, a index manager, and a query engine.
 Built in C++, and runs on linux.
 
-
 ## Paged File Manager:
-The paged file manager is the most simple of the components. 
-It firstly handles opening and closing files. Second, it enforces the usage of reading and writing to an opened files via 4098 Byte buffers or 'pages'.
+The paged file manager(PFM) is the most simple of the components. 
+It opens files and returns a filehandler, and also closes files. Second, 
+
+### FileHandler
+A object exposed by the PFM that enforces the usage of reading and writing to an opened files via 4098 Byte buffers or 'pages'.
 
 ## Record Based File Manager:
 The record based file manager(RBFM), defines the logic of how the information on each page is organized. 
