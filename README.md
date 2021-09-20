@@ -31,8 +31,9 @@ Updated records that become to large to fit on the page, have their record heap 
 So although an RID is gauranteed to be persistent, multiple RIDs may point to the same data.
 
 ## Relation Manager:
+The relation manager organizes the relations by storing them as files, and also keeps track of the attributes of each relation. To do this it creates three special system files, the tables file, the columns file and the index file.
 
 ## Index Manager:
-The index manager creates indexes using B+ trees. 
+The index manager creates indexes using B+ trees.
 
 ## Query Engine:
