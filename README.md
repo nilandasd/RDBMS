@@ -34,6 +34,6 @@ So although an RID is gauranteed to be persistent, multiple RIDs may point to th
 The relation manager organizes the relations by storing them as files, and also keeps track of the attributes of each relation. To do this it creates three special system files, the tables file, the columns file and the index file.
 
 ## Index Manager:
-The index manager creates indexes using B+ trees.
+The index manager creates indexes using B+ trees with very high fanout. Only single attribute indexes are supported.
 
 ## Query Engine:
