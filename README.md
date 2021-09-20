@@ -34,7 +34,7 @@ So although an RID is gauranteed to be persistent, multiple RIDs may point to th
 The relation manager organizes the relations by storing them as files, and also keeps track of the attributes of each relation. To do this it creates three special system files, the tables file, the columns file and the index file.
 
 ## Index Manager:
-The index manager creates indexes using B+ trees with very high fanout. Only single attribute indexes are supported.
+The index manager creates indexes using B+ trees with very high fanout. Only single attribute indexes are supported. More on B+ trees https://en.wikipedia.org/wiki/B%2B_tree
 
 ## Query Engine:
 The query engine essentially acts as the API to expose the functionality of the entire RDBMS while keeping the rest hidden. Currently the query engine only supports equality joins.
