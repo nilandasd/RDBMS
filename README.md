@@ -37,3 +37,4 @@ The relation manager organizes the relations by storing them as files, and also 
 The index manager creates indexes using B+ trees with very high fanout. Only single attribute indexes are supported.
 
 ## Query Engine:
+The query engine essentially acts as the API to expose the functionality of the entire RDBMS while keeping the rest hidden. Currently the query engine only supports equality joins.
